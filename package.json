@@ -1,0 +1,22 @@
+{
+  "name": "huddle-landing-page-with-curved-sections",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss src/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-frontend-mentor-projects/huddle-landing-page-with-curved-sections.git"
+  },
+  "author": "Pavel Georgiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-frontend-mentor-projects/huddle-landing-page-with-curved-sections/issues"
+  },
+  "homepage": "https://github.com/pavel-frontend-mentor-projects/huddle-landing-page-with-curved-sections#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
