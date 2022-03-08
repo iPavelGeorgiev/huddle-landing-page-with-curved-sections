@@ -569,4 +569,61 @@ img {
   border-radius: 0.7rem;
 }
 
+@media (min-width: 992px) {
+  .additional-info {
+    flex-basis: 28%;
+    order: -1;
+  }
+}
+.additional-info .logo {
+  display: block;
+  margin-bottom: 1.3rem;
+  width: 22rem;
+}
+@media (min-width: 992px) {
+  .additional-info .logo {
+    margin-bottom: 2.2rem;
+  }
+}
+.additional-info .huddle-info {
+  margin-bottom: 4rem;
+}
+@media (min-width: 992px) {
+  .additional-info .huddle-info {
+    margin-bottom: 2.2rem;
+  }
+}
+.additional-info .contact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.additional-info .contact img {
+  width: 1.8rem;
+}
+.additional-info .contact {
+  margin-bottom: 1rem;
+}
+.additional-info .social {
+  margin-top: 4.3rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .additional-info .social {
+    margin-top: 7.1rem;
+  }
+}
+.additional-info .fa-brands {
+  font-size: 2.7rem;
+  margin-right: 1.7rem;
+}
+@media (min-width: 992px) {
+  .additional-info .fa-brands {
+    font-size: 3.3rem;
+  }
+}
+.additional-info .fa-brands:hover {
+  color: #02c7fd;
+}
+
 /*# sourceMappingURL=main.css.map */
