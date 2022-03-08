@@ -532,5 +532,41 @@ img {
     justify-content: space-between;
   }
 }
+.newsletter {
+  margin-bottom: 10rem;
+}
+@media (min-width: 992px) {
+  .newsletter {
+    flex-basis: 43%;
+  }
+}
+.newsletter-title {
+  text-transform: uppercase;
+}
+.newsletter-desc {
+  margin-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .newsletter-desc {
+    max-width: 71%;
+  }
+}
+.newsletter-sub-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+@media (min-width: 992px) {
+  .newsletter-sub-form {
+    flex-wrap: nowrap;
+    gap: 3.4rem;
+  }
+}
+.newsletter .sub-email {
+  flex-basis: 100%;
+  height: 4.7rem;
+  border-radius: 0.7rem;
+}
 
 /*# sourceMappingURL=main.css.map */
