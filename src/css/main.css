@@ -626,4 +626,20 @@ img {
   color: #02c7fd;
 }
 
+.attribution {
+  text-align: center;
+  padding: 1rem 0;
+}
+@media (min-width: 992px) {
+  .attribution {
+    flex-basis: 100%;
+  }
+}
+.attribution a {
+  color: #ff52bf;
+}
+.attribution a:hover {
+  color: #ff8fd8;
+}
+
 /*# sourceMappingURL=main.css.map */
