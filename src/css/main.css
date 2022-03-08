@@ -513,5 +513,24 @@ img {
     content: url("../img/bg-section-bottom-desktop-2.svg");
   }
 }
+.main-footer .footer-divider {
+  margin-bottom: -1px;
+}
+.main-footer .footer-divider img {
+  max-height: 20rem;
+}
+.main-footer-bg {
+  padding-top: 5.5rem;
+  background-color: #00252e;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .main-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
