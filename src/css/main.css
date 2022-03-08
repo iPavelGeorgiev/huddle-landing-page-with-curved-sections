@@ -391,4 +391,56 @@ img {
   }
 }
 
+.stats {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.stats .screen-mockup-img {
+  width: 100%;
+  margin-bottom: 14rem;
+}
+@media (min-width: 992px) {
+  .stats .screen-mockup-img {
+    width: 85%;
+  }
+}
+.stats .engagement {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+.stats .engagement-icon {
+  position: absolute;
+  left: 0;
+  top: -2rem;
+  width: 3rem;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .stats .engagement-icon {
+    width: 3.8rem;
+  }
+}
+.stats .engagement-number {
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .stats .engagement-number {
+    font-size: 9rem;
+  }
+}
+@media (min-width: 992px) {
+  .stats .engagement-label {
+    font-size: 2.2rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
