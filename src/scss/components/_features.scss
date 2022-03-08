@@ -1,0 +1,76 @@
+@use "../abstracts/colors";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/breakpoints" as *;
+
+.features {
+  margin-bottom: 8rem;
+}
+
+.feature {
+  background-color: colors.$very-pale-blue;
+
+  .feature-content {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include breakpoint("lg", "min") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: start;
+    }
+  }
+
+  &-img {
+    width: 100%;
+    margin-bottom: 6rem;
+
+    @include breakpoint("lg", "min") {
+      width: 45%;
+      &.right {
+        order: 1;
+      }
+    }
+  }
+
+  .feature-info {
+    @include breakpoint("lg", "min") {
+      width: 45%;
+    }
+  }
+
+  &-desc {
+    @include breakpoint("lg", "min") {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.feature:nth-of-type(4) {
+  background-color: colors.$white;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.divider {
+  width: 100%;
+}
+
+@include breakpoint("lg", "min") {
+  .top-divider-1 {
+    content: url("../img/bg-section-top-desktop-1.svg");
+  }
+
+  .top-divider-2 {
+    content: url("../img/bg-section-top-desktop-2.svg");
+  }
+
+  .bottom-divider-1 {
+    content: url("../img/bg-section-bottom-desktop-1.svg");
+  }
+
+  .bottom-divider-2 {
+    content: url("../img/bg-section-bottom-desktop-2.svg");
+  }
+}
