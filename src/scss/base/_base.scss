@@ -1,5 +1,6 @@
-@use '../abstracts/colors';
-@use '../abstracts/variables' as vars;
+@use "../abstracts/colors";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/breakpoints" as *;
 
 :root {
   font-size: vars.$font-size-root;
@@ -7,15 +8,14 @@
 
 body {
   font-family: vars.$font-family-base;
-  font-size: vars.$font-size-base;
+  font-size: vars.$font-size-base-mobile;
   font-weight: vars.$font-weight-normal;
   line-height: vars.$line-height-base;
   color: colors.$very-dark-cyan;
   background-color: colors.$white;
   min-height: 100vh;
-}
 
-.main {
-  min-height: 100vh;
-  padding: 8rem 2.4rem;
+  @include breakpoint("lg", "min") {
+    font-size: vars.$font-size-base-desktop;
+  }
 }
