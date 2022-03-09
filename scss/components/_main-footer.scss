@@ -1,0 +1,27 @@
+@use "../abstracts/colors";
+@use "../abstracts/variables" as vars;
+@use "../abstracts/breakpoints" as *;
+
+.main-footer {
+  .footer-divider {
+    margin-bottom: -1px;
+    
+    img {
+      max-height: 20rem;
+    }
+  }
+
+  &-bg {
+    padding-top: 5.5rem;
+    background-color: colors.$very-dark-cyan;
+    color: colors.$white;
+  }
+}
+
+@include breakpoint("lg", "min") {
+  .main-footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

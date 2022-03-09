@@ -1,0 +1,55 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/breakpoints" as *;
+
+.stats {
+  text-align: center;
+
+  @include breakpoint("lg", "min") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .screen-mockup-img {
+    width: 100%;
+    margin-bottom: 14rem;
+
+    @include breakpoint("lg", "min") {
+      width: 85%;
+    }
+  }
+
+  .engagement {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  }
+
+  .engagement-icon {
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    width: 3rem;
+    height: auto;
+
+    @include breakpoint("lg", "min") {
+      width: 3.8rem;
+    }
+  }
+
+  .engagement-number {
+    font-size: 6.2rem;
+    font-weight: vars.$font-weight-bold;
+
+    @include breakpoint("lg", "min") {
+      font-size: 9rem;
+    }
+  }
+
+  .engagement-label {
+    @include breakpoint("lg", "min") {
+      font-size: 2.2rem;
+    }
+  }
+}
