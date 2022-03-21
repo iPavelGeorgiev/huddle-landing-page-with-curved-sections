@@ -53,7 +53,7 @@ I don't have access to the premium Figma/Sketch files, so the design is not pixe
 
 ### Links
 
-- [Live Site URL](https://pavel-frontend-mentor.github.io/huddle-landing-page-with-curved-sections/)
+- [Live Site URL](https://pavel-frontend-mentor.github.io/huddle-landing-page-with-curved-sections)
 - [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-Es6A-XnWH)
 
 ## My process
@@ -85,10 +85,10 @@ I found a new accessibility-friendly way to hide content using the following sni
 
 ### Useful resources
 
-1. [Choose license](https://choosealicense.com/) - A very useful website that helps you choose the right license for your projects.
-2. [No license](https://choosealicense.com/) - A short article that explains what we can expect from a publicly published project that does not have a license.
+1. [Choose license](https://choosealicense.com) - A very useful website that helps you choose the right license for your projects.
+2. [No license](https://choosealicense.com/no-permission) - A short article that explains what we can expect from a publicly published project that does not have a license.
 
 ## Author
 
 - Frontend Mentor - [@iPavelGeorgiev](https://www.frontendmentor.io/profile/iPavelGeorgiev)
-- LinkedIn - [@iPavelGeorgiev](https://www.linkedin.com/in/ipavelgeorgiev/)
+- LinkedIn - [@iPavelGeorgiev](https://www.linkedin.com/in/ipavelgeorgiev)
