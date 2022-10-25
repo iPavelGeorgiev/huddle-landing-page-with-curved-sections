@@ -1,25 +1,42 @@
 {
-  "homepage": "https://pavel-frontend-mentor.github.io/huddle-landing-page-with-curved-sections",
+  "homepage": "https://github.com/iPavelGeorgiev/huddle-landing-page-with-curved-sections",
   "name": "huddle-landing-page-with-curved-sections",
   "version": "1.0.0",
   "description": "Frontend Mentor Challenge",
-  "main": "index.js",
+  "main": "dist/index.html",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "browser-sync": "^2.27.10",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.1.13",
+    "gh-pages": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0"
+  },
   "scripts": {
-    "sass": "sass --watch src/scss/main.scss src/css/main.css",
-    "deploy": "gh-pages -d src"
+    "build:sass": "sass --no-source-map src/scss:dist/css",
+    "copy:images": "copyfiles -u 1 ./src/img/**/* dist",
+    "copy:html": "copyfiles -u 1 ./src/*.html dist",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:images": "onchange \"src/img/**/*\" -- npm run copy:html",
+    "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:sass": "sass --no-source-map --watch src/scss:dist/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server dist --files dist",
+    "start": "npm-run-all copy --parallel watch serve",
+    "build": "npm-run-all copy:images copy:html build:*",
+    "deploy": "gh-pages -d dist",
+    "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavel-frontend-mentor/huddle-landing-page-with-curved-sections.git"
+    "url": "git+https://github.com/iPavelGeorgiev/huddle-landing-page-with-curved-sections.git"
   },
   "author": "Pavel Georgiev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pavel-frontend-mentor/huddle-landing-page-with-curved-sections/issues"
-  },
-  "homepage": "https://github.com/pavel-frontend-mentor/huddle-landing-page-with-curved-sections#readme",
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "sass": "^1.49.9"
+    "url": "https://github.com/iPavelGeorgiev/huddle-landing-page-with-curved-sections/issues"
   }
 }
