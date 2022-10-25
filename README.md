@@ -14,6 +14,7 @@ This is my solution to the [huddle landing page with curved sections challenge o
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
+- [Run locally](#run-locally)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -53,7 +54,7 @@ I don't have access to the premium Figma/Sketch files, so the design is not pixe
 
 ### Links
 
-- [Live Site URL](https://pavel-frontend-mentor.github.io/huddle-landing-page-with-curved-sections)
+- [Live Site URL](https://ipavelgeorgiev.github.io/huddle-landing-page-with-curved-sections/)
 - [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-Es6A-XnWH)
 
 ## My process
@@ -87,6 +88,32 @@ I found a new accessibility-friendly way to hide content using the following sni
 
 1. [Choose license](https://choosealicense.com) - A very useful website that helps you choose the right license for your projects.
 2. [No license](https://choosealicense.com/no-permission) - A short article that explains what we can expect from a publicly published project that does not have a license.
+
+## Run locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/iPavelGeorgiev/huddle-landing-page-with-curved-sections.git
+```
+
+Go to the project directory
+
+```bash
+  cd huddle-landing-page-with-curved-sections
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
 
 ## Author
 
